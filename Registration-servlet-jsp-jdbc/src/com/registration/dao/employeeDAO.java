@@ -15,7 +15,7 @@ public class employeeDAO {
 		int result = 0;
 		Class.forName("com.mysql.jdbc.Driver");
 		
-		try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/comet?useSSL=false","root","karuda183");
+		try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/comet?useSSL=false","root","root");
 			
 				PreparedStatement preparedstatement = (PreparedStatement) connection.prepareStatement(INSERT_USERS)
 				
